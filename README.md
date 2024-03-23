@@ -28,11 +28,13 @@ The Forum button will open up the forum page of that book which will have all th
 
 The review button to the right of the reviews title will initiate a popup to allow the user to type their review which will be displayed at the bottom of the screen. \
 ![image](https://github.com/Sayonaru/book_club/assets/86726414/28d29304-fdbe-4c8a-a165-73529d954bf3)
+If you click on the review and it is yours, you will be given the option to delete the review. ![image](https://github.com/Sayonaru/book_club/assets/86726414/18a02e7f-c4f1-4a0a-9518-d44e54e31143)
 
 
 ## This project & the future
 This book club app project is primarily made around showcasing software skills involving android java development. Utilising database handling, data validation, adapters, reading, storing and displaying data input by the user and employing group chat like scenarios. The UI had many problems and not enough time to fix, but should be easily fixable with adequate time to look over the errors and employ the steps necessary to fix them if I were to continue this project in the future. \
 There would also be a few more features I would have liked to add such as admin features which would allow them to delete any message from reviews or forums that they deem inappropriate. This would be achieved by manipulating the user type data in the database to admin and when the user tries to delete the message, while looking if the uid match, also check if the current user type is an admin. This feature can be mimiced for other admin features they will have across the app. To keep the admin feature contained, the database owner would manually give out this role. I believe this to be the most efficient as a starting point as there should be too many admins and it is a powerful role to be given out by accident.
+For adding books, since I have ran into a few books which do exist but aren't on the api, including a way to manually add books would be easy at it would be done the same as in the database session activity and similar to adding comments and messages in the forum. These would primarily be updated to the firebase database, however I believe that having the ability to create books offline would be good which can be saved to an SQLite database. These can then be checked if they are added to the online database everytime the user logs in if they have internet connection. If the bookId is already in the firebase database do nothing, else add it to the database.
 
 ## Database
 The database looks like this: \

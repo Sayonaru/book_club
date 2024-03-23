@@ -397,7 +397,7 @@ public class BookDetails extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(BookDetails.this, "Uid added successfully", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(BookDetails.this, "Uid added successfully", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
                         checkSavedBookId();
                     }
@@ -457,7 +457,7 @@ public class BookDetails extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(BookDetails.this, "bookId added successfully", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(BookDetails.this, "bookId added successfully", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
                     }
                 })

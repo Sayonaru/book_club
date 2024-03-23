@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
                 android:layout_weight="1"
-                android:text="Preview"
+                android:text="Prev"
                 android:textAllCaps="false" />
 
             <!--button for opening buying page of the book-->

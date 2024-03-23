@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">book_club</string>
+    <string name="new_user_sign_up">New User? <b>Sign Up</b></string>
+    <string name="already_a_user_log_in">Already a user? <b>Log In</b></string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BookForumActivity">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forum Name"
+        android:textAlignment="center"
+        android:padding="20dp"/>
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:tint="@color/black"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="13dp"
+        android:padding="5dp"/>
+
+
+
+    <ScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTv"
+        android:layout_above="@id/myLinearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messagesRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titleTv"
+            android:background="#FBFBFB"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_forum_message" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+        <!--<ScrollView-->
+        <!--    android:id="@+id/my_scroll_view"-->
+        <!--    android:layout_width="match_parent"-->
+        <!--    android:layout_height="wrap_content"-->
+        <!--    android:layout_above="@id/myLinearLayout">-->
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/forum_text_display"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="2dp"-->
+        <!--            android:layout_marginEnd="2dp"-->
+        <!--            android:layout_marginBottom="50dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="@android:color/background_dark"-->
+        <!--            android:textSize="20sp" />-->
+
+        <!--    </LinearLayout>-->
+
+        <!--</ScrollView>-->
+
+        <LinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_forum_message"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Message..."
+                android:padding="17dp" />
+
+            <ImageButton
+                android:id="@+id/send_message_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_send_24" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
